@@ -27,7 +27,9 @@ body {
 }
 
 h1,
-p {
+p,
+th,
+td {
   color: var(--text-color);
 }
 
@@ -39,5 +41,29 @@ p {
 }
 
 .main {
-  margin-top: 140px;
+  margin-top: 150px;
+}
+
+.table,
+th,
+td,
+tbody,
+thead {
+  text-align: center;
+  align-items: center;
+}
+.img_albuns {
+  height: 150px;
+  width: 150px;
+}
+.footer {
+  color: white;
+  position: static;
+  margin-top: 100px;
+  text-align: center;
+  padding: 30px;
+}
+.footer:hover {
+  transition: 0.5s;
+  color: black;
 }
