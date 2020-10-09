@@ -29,7 +29,8 @@ body {
 h1,
 p,
 th,
-td {
+td,
+form {
   color: var(--text-color);
 }
 
@@ -66,4 +67,8 @@ thead {
 .footer:hover {
   transition: 0.5s;
   color: black;
+}
+
+.forms {
+  width: 500px;
 }

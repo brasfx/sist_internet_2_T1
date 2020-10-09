@@ -50,11 +50,64 @@
           </ul>
         </div>
       </nav>
+      <section class="container forms">
+        <h1 style="text-align: center">Insira seus dados</h1>
+        <form style="text-align: center" action="" method="post">
+          <br /><strong>Nome</strong><br />
+          <input class="form-control" type "text" name="name"><br />
+          <!--entrada do nome-->
+          <div class="form-group">
+            <br /><strong>E-mail</strong> <br />
+            <input class="form-control" type "email" name="email"><br />
+          </div>
+
+          <!--entrada do email-->
+          <br /><strong>Mensagem</strong> <br />
+          <textarea class="form-control" name="text"></textarea> <br />
+          <!--texto longo-->
+          <br /><strong>Data de nascimento</strong> <br />
+          <input class="form-control" type="date" name="dateOfBirth" /><br />
+          <!-- data de nascimento-->
+          <br /><strong>Selecione seu estado</strong><br />
+          <select class="form-control" name="estados-brasil">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+          <br />
+          <hr />
+          <input class="btn btn-primary" type="submit" value="Enviar" />
+        </form>
+      </section>
     </main>
     <footer class="footer bg-dark">
       Olá amigos
       <script type="text/javascript" src="/public/js/selectTheme.js"></script>
-      <!-- JS, Popper.js, and jQuery -->
+      <!-- JS, Popper.js, jQuery -->
       <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
