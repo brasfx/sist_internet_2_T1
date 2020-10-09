@@ -113,3 +113,11 @@ thead {
   width: 600px;
   margin: 20px;
 }
+.news {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+a:link {
+  text-decoration: none;
+}
