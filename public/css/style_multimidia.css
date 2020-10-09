@@ -21,7 +21,7 @@
 .frame-videos {
   display: flex;
   flex-direction: row;
-  float: left;
+
   margin-bottom: 10px;
 }
 .videos {
