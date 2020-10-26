@@ -55,24 +55,35 @@
       </nav>
       <section class="container forms">
         <h1 class="title-section">Insira seus dados</h1>
-        <form style="text-align: center" action="" method="post">
+        <form
+          id="form"
+          style="text-align: center"
+          action=""
+          method="post"
+          onsubmit=" return validateForm(this)"
+         
+          
+        >
           <br /><strong>Nome</strong><br />
-          <input class="form-control input" type "text" name="name"
+          <input class="form-control input" type "text" name="name" id="name"
           placeholder="Insira seu nome"><br />
-          <!--entrada do nome-->
+
           <div class="form-group">
             <br /><strong>E-mail</strong> <br />
             <input class="form-control input" type "email" name="email"
-            placeholder="Insira seu e-mail"><br />
+            id="email" placeholder="Insira seu e-mail"><br />
           </div>
+          <br /><strong>Assunto</strong> <br />
+          <input class="form-control input " name="assunto" id="assunto" placeholder="Insira um assunto"></input>
+          <br />
 
-          <!--entrada do email-->
           <br /><strong>Mensagem</strong> <br />
-          <textarea class="form-control" name="text"></textarea> <br />
-          <!--texto longo-->
+          <textarea class="form-control " name="text" id="text"></textarea>
+          <br />
+
           <br /><strong>Data de nascimento</strong> <br />
-          <input class="form-control" type="date" name="dateOfBirth" /><br />
-          <!-- data de nascimento-->
+          <input class="form-control" type="date" name="date"/><br />
+
           <br /><strong>Selecione seu estado</strong><br />
           <select class="form-control" name="estados-brasil">
             <option value="AC">Acre</option>
@@ -105,13 +116,22 @@
           </select>
           <br />
           <hr />
-          <input class="btn btn-primary btn-lg" type="submit" value="Enviar" />
+          <input
+            class="btn btn-danger btn-lg"
+            type="submit"
+            name="enviar"
+            id="enviar"
+            value="Enviar"
+          />
         </form>
       </section>
     </main>
     <footer class="footer bg-dark">
       ⚡For those about to rock, We salute you!⚡
       <script type="text/javascript" src="/public/js/selectTheme.js"></script>
+      <script type="text/javascript" src="/public/js/validateForm.js"></script>
+      <script type="text/php" src="/public/php/sendForm.php"></script>
+
       <!-- JS, Popper.js, jQuery -->
       <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
